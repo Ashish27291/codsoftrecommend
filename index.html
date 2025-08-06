@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Recommender</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white min-h-screen flex items-center justify-center">
+  <div class="bg-gray-900 p-8 rounded-3xl shadow-lg max-w-md w-full space-y-6 border border-purple-700">
+    <h1 class="text-3xl font-bold text-purple-400 text-center">🎬 Movie Recommender</h1>
+    
+    <div>
+      <label class="block mb-2 text-lg">Choose Genre:</label>
+      <select id="genreSelect" class="w-full p-2 bg-gray-800 border border-purple-500 rounded">
+        <option value="">-- Select Genre --</option>
+        <option value="action">Action</option>
+        <option value="romance">Romance</option>
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+      </select>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">Recommended Movies:</h2>
+      <ul id="recommendations" class="space-y-2 list-disc list-inside text-blue-300"></ul>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
